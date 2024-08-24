@@ -10,8 +10,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 
 /*1st way*/
-@ComponentScan(basePackageClasses = {MyObj.class})
-/*@ComponentScan(basePackages = "lk.ijse")*/
+
+
+/*spring walata kiyanawa base package ekai sub pakages okkomai balanna kiyala*/
+@ComponentScan(basePackages = "lk.ijse")
+
+/*spring walata balanna ona than tika witharai kiyanne*/
+//@ComponentScan(basePackageClasses = {MyObj.class})
 
 public class AppConfig {
 
