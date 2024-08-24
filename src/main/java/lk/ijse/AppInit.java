@@ -1,9 +1,12 @@
 package lk.ijse;
 
 import lk.ijse.config.AppConfig;
+import lk.ijse.obj.BeanLifeCycle;
+import lk.ijse.obj.NewObJ;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 
 public class AppInit {
     public static void main(String[] args) {
