@@ -1,12 +1,15 @@
 package lk.ijse.config;
 
 
+import lk.ijse.User.Ian;
+import lk.ijse.app.Transaction;
 import lk.ijse.obj.BeanLifeCycle;
 import lk.ijse.obj.MyObj;
 import lk.ijse.obj.OtherObj;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @Configuration
 
@@ -17,7 +20,9 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(basePackages = "lk.ijse")
 
 /*spring walata balanna ona than tika witharai kiyanne*/
-@ComponentScan(basePackageClasses = {MyObj.class ,BeanLifeCycle.class})
+
+//@ComponentScan(basePackageClasses = {MyObj.class ,BeanLifeCycle.class , Ian.class})
+@ComponentScan( basePackageClasses = {Transaction.class, Long.class})
 
 public class AppConfig {
 
